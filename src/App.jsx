@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import './App.css';
 import Drawer from './Drawer.jsx';
 import Footer from './Footer.jsx';
+import About from './About.jsx';
 
 // Dummy components
 function Home() {
@@ -20,7 +21,7 @@ function Settings() {
 // The main logic component
 function MainLayout() {
   const location = useLocation();
-  const hideSidebarRoutes = ["/quiz"];
+  const hideSidebarRoutes = ["/quiz","/about"];
   const showSidebar = !hideSidebarRoutes.includes(location.pathname);
 
   return (
@@ -30,6 +31,7 @@ function MainLayout() {
           <Route path="/" element={<Home />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Drawer>
       <Footer />
