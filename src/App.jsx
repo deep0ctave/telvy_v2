@@ -10,6 +10,7 @@ import Login from './Login.jsx';
 import ForgotPassword from './ForgotPassword.jsx';
 import HomePage from './HomePage.jsx';
 import Dashboard from './Dashboard.jsx';
+import QuizzesPage from './QuizzesPage.jsx';
 
 // Dummy components
 function Home() {
@@ -43,6 +44,7 @@ function MainLayout() {
           <Route path="/login" element={<Login />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/quizzes" element={<QuizzesPage />} />
         </Routes>
       </Drawer>
       <Footer />
