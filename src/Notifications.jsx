@@ -41,7 +41,7 @@ const NotificationsPage = () => {
     };
 
     return (
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 ">
         {labels.map((label, index) => {
           const style = labelStyleMap[label] || "";
           return (
@@ -82,11 +82,11 @@ const NotificationsPage = () => {
       </div>
 
       {/* Notification List */}
-      <div className="p-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="p-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         {notifications.map((notification) => (
           <div
             key={notification.id}
-            className="card bg-base-100 border border-base-300 shadow-sm"
+            className="card bg-base-200 hover:bg-base-300 transition-shadow border border-base-300 rounded-box shadow"
           >
             <div className="card-body">
               <div className="flex justify-between items-start">
