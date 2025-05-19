@@ -28,7 +28,7 @@ function MainLayout() {
     <>
       <Drawer showSidebar={showSidebar}>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
