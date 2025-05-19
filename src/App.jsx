@@ -9,6 +9,7 @@ import Register from './Registration.jsx';
 import Login from './Login.jsx';
 import ForgotPassword from './ForgotPassword.jsx';
 import HomePage from './HomePage.jsx';
+import Dashboard from './Dashboard.jsx';
 
 // Dummy components
 function Home() {
@@ -41,6 +42,7 @@ function MainLayout() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Drawer>
       <Footer />
