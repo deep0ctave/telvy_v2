@@ -11,19 +11,10 @@ import ForgotPassword from './ForgotPassword.jsx';
 import HomePage from './HomePage.jsx';
 import Dashboard from './Dashboard.jsx';
 import QuizzesPage from './QuizzesPage.jsx';
-
-// Dummy components
-function Home() {
-  return <div><h1>Home Page</h1></div>;
-}
-
-function Quiz() {
-  return <div><h1>Quiz Page</h1></div>;
-}
-
-function Settings() {
-  return <div><h1>Settings Page</h1></div>;
-}
+import SettingsPage from './SettingsPage.jsx';
+import AccountSettings from './AccountSettings.jsx';
+import PrivacySettings from './PrivacySettings.jsx';
+import NotificationSettings from './NotificationSettings.jsx';
 
 // The main logic component
 function MainLayout() {
@@ -36,8 +27,7 @@ function MainLayout() {
       <Drawer showSidebar={showSidebar}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/settings" element={<SettingsPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/register" element={<Register />} />
@@ -45,6 +35,10 @@ function MainLayout() {
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/quizzes" element={<QuizzesPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/settings/account" element={<AccountSettings />} />
+          <Route path="/settings/notifications" element={<NotificationSettings />} />
+          <Route path="/settings/privacy" element={<PrivacySettings />} />
         </Routes>
       </Drawer>
       <Footer />
