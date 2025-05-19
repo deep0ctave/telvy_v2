@@ -8,6 +8,7 @@ import ContactUs from './ContactUs.jsx';
 import Register from './Registration.jsx';
 import Login from './Login.jsx';
 import ForgotPassword from './ForgotPassword.jsx';
+import HomePage from './HomePage.jsx';
 
 // Dummy components
 function Home() {
@@ -32,7 +33,7 @@ function MainLayout() {
     <>
       <Drawer showSidebar={showSidebar}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/about" element={<About />} />
