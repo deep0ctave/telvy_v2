@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import React from "react";
+import { Link } from 'react-router-dom';
 
 // Logo Component
 const Logo = ({ hideOnLg = false }) => (
-  <div className={`mx-2 flex-1 text-xl font-bold ${hideOnLg ? 'lg:hidden' : ''}`}>
+  <Link to="/" className={`mx-2 flex-1 text-xl font-bold ${hideOnLg ? 'lg:hidden' : ''}`}>
     Telvy
-  </div>
+  </Link>
 );
 
 // Theme Toggle

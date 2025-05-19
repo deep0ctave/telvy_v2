@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom';
 
 function Drawer({ showSidebar, children }) {
 
@@ -19,7 +20,7 @@ function Drawer({ showSidebar, children }) {
       </div>
       {showSidebar && (
         <div className="drawer-side lg:hidden h-full z-40 lg:z-30">
-            <div className="bg-base-300 navbar sticky top-0 z-20 hidden items-center gap-2 px-4 py-0 backdrop-blur flex-1 text-xl font-bold lg:flex "><h1>Telvy</h1></div>
+            <Link to="/" className="bg-base-300 navbar sticky top-0 z-20 hidden items-center gap-2 px-4 py-0 backdrop-blur flex-1 text-xl font-bold lg:flex "><h1>Telvy</h1></Link>
           <label htmlFor="my-drawer" className="drawer-overlay" />
           {/* Sidebar Content */}
           <ul className="menu p-4 w-80 min-h-full bg-base-300 text-base-content">

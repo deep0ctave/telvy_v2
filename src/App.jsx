@@ -6,6 +6,8 @@ import Footer from './Footer.jsx';
 import About from './About.jsx';
 import ContactUs from './ContactUs.jsx';
 import Register from './Registration.jsx';
+import Login from './Login.jsx';
+import ForgotPassword from './ForgotPassword.jsx';
 
 // Dummy components
 function Home() {
@@ -23,7 +25,7 @@ function Settings() {
 // The main logic component
 function MainLayout() {
   const location = useLocation();
-  const hideSidebarRoutes = ["/quiz","/about","/contact","/register"];
+  const hideSidebarRoutes = ["/quiz","/about","/contact","/register","/login","/forgotpassword"];
   const showSidebar = !hideSidebarRoutes.includes(location.pathname);
 
   return (
@@ -36,6 +38,8 @@ function MainLayout() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
         </Routes>
       </Drawer>
       <Footer />
