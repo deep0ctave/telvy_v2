@@ -82,7 +82,7 @@ const ProfileCard = ({
 // Submenu card
 const HomeCard = ({ title, icon, desc }) => {
   return (
-    <div className="card h-40 bg-secondary text-secondary-content shadow-md hover:shadow-xl transition cursor-pointer">
+    <div className="card h-40 bg-base-200 shadow-md hover:shadow-xl transition cursor-pointer">
       <div className="card-body">
         <div className="flex items-center gap-3">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 stroke-current" fill="none" viewBox="0 0 24 24">

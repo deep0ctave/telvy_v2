@@ -18,6 +18,7 @@ import NotificationSettings from './NotificationSettings.jsx';
 import HelpAndFAQ from './HelpandFAQ.jsx';
 import Notifications from './Notifications.jsx';
 import GroupPage from './GroupPage.jsx';
+import StatsPage from './StatsPage.jsx';
 
 // The main logic component
 function MainLayout() {
@@ -44,7 +45,8 @@ function MainLayout() {
           <Route path="/settings/privacy" element={<PrivacySettings />} />
           <Route path="/help" element={<HelpAndFAQ />} />
           <Route path="/notifications" element={<Notifications />} />
-           <Route path="/groups" element={<GroupPage />} />
+          <Route path="/groups" element={<GroupPage />} />
+          <Route path="/stats" element={<StatsPage />} />
         </Routes>
       </Drawer>
       <Footer />
