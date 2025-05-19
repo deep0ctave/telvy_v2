@@ -15,6 +15,7 @@ import SettingsPage from './SettingsPage.jsx';
 import AccountSettings from './AccountSettings.jsx';
 import PrivacySettings from './PrivacySettings.jsx';
 import NotificationSettings from './NotificationSettings.jsx';
+import HelpAndFAQ from './HelpandFAQ.jsx';
 
 // The main logic component
 function MainLayout() {
@@ -39,6 +40,7 @@ function MainLayout() {
           <Route path="/settings/account" element={<AccountSettings />} />
           <Route path="/settings/notifications" element={<NotificationSettings />} />
           <Route path="/settings/privacy" element={<PrivacySettings />} />
+          <Route path="/help" element={<HelpAndFAQ />} />
         </Routes>
       </Drawer>
       <Footer />
