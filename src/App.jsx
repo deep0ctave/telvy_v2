@@ -19,6 +19,7 @@ import HelpAndFAQ from './HelpandFAQ.jsx';
 import Notifications from './Notifications.jsx';
 import GroupPage from './GroupPage.jsx';
 import StatsPage from './StatsPage.jsx';
+import Leaderboard from './LeaderboardPage.jsx';
 
 // The main logic component
 function MainLayout() {
@@ -47,6 +48,7 @@ function MainLayout() {
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/groups" element={<GroupPage />} />
           <Route path="/stats" element={<StatsPage />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
         </Routes>
       </Drawer>
       <Footer />
