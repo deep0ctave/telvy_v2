@@ -20,7 +20,7 @@ function ContactUs() {
 
             <label className="label"><span className="label-text">Message</span></label>
             <textarea className="textarea textarea-bordered w-full" placeholder="Your message..."></textarea>
-
+   
             <button className="btn btn-primary mt-4" type="submit">Send Message</button>
           </fieldset>
         </form>

@@ -20,12 +20,29 @@ import Notifications from './Notifications.jsx';
 import GroupPage from './GroupPage.jsx';
 import StatsPage from './StatsPage.jsx';
 import Leaderboard from './LeaderboardPage.jsx';
+import QuizPage from './QuizPage.jsx';
 
 // The main logic component
 function MainLayout() {
   const location = useLocation();
   const hideSidebarRoutes = ["/quiz","/about","/contact","/register","/login","/forgotpassword"];
   const showSidebar = !hideSidebarRoutes.includes(location.pathname);
+
+// Quiz example data
+  const sampleQuestions = [
+    {
+      id: 1,
+      question: "What is the capital of France?",
+      options: ["Berlin", "London", "Paris", "Rome"],
+      answer: "Paris"
+    },
+    {
+      id: 2,
+      question: "What is 2 + 2?",
+      options: ["1", "2", "3", "4"],
+      answer: "4"
+    }
+  ];
 
   return (
     <>
@@ -49,6 +66,7 @@ function MainLayout() {
           <Route path="/groups" element={<GroupPage />} />
           <Route path="/stats" element={<StatsPage />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="/quizzes/:quizId" element={<QuizPage />} /> {/* Testing Quiz Component */}
         </Routes>
       </Drawer>
       <Footer />
